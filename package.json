@@ -1,10 +1,13 @@
 {
-  "name": "router",
+  "name": "react-router-dependency",
   "private": true,
-  "version": "0.0.0",
+  "version": "0.1.0",
+  "keywords": ["react", "router"],
+  "main": "dist/index.js",
+  "module": "dist/index.js",
   "scripts": {
     "dev": "vite",
-    "build": "tsc && vite build",
+    "build": "rm -rf dist && NODE_ENV=production babel src/lib --out-dir dist --copy-files",
     "preview": "vite preview"
   },
   "dependencies": {
